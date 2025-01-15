@@ -1,0 +1,246 @@
+/*Обнуление*/
+*,
+*:before,
+*:after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+@font-face {
+	font-weight: 400; /* Соответствует значению normal */
+	font-family: Montserrat;
+	src: url("./fonts/Шрифт/Manrope-Regular.otf");
+}
+@font-face {
+	font-weight: 700; /* Соответствует значению bold */
+	font-family: Montserrat;
+	src: url("./fonts/static/Montserrat-Bold.ttf");
+}
+/* Шрифт для меню */
+@font-face {
+	font-weight: 500;
+	font-family: Montserrat;
+	src: url("./fonts/Шрифт/Manrope-Medium.otf");
+}
+@font-face {
+	font-weight: 600;
+	font-family: Montserrat;
+	src: url("./fonts/Шрифт/Manrope-SemiBold.otf");
+}
+@font-face {
+	font-weight: 400;
+	font-family: Blackcraft;
+	src: url("./fonts/Blackcraft.otf");
+}
+@font-face {
+	font-weight: 800;
+	font-family: HeliosExt;
+	src: url("./fonts/HeliosExt-Bold.otf");
+}
+@font-face {
+	font-weight: 400;
+	font-family: HeliosExt;
+	src: url("./fonts/HeliosExt.otf");
+}
+
+
+
+body {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+/* Стилизация ХЕДЕРА*/
+header {
+	position: fixed;
+	padding: 0 3%;
+	top: 0;
+	left: 0;
+	right: 0;
+    height: 85px;
+	display: flex;
+    justify-content: space-between;
+}
+.header-content {
+	margin-top: 15px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.logo-content {
+	display: flex;
+    align-items: center;
+}
+.podzag-logo {
+	width: 250px;
+	font-family: Montserrat;
+	font-weight: 400;
+	margin-left: 15px;
+	font-size: 12px;
+	color: rgb(255, 255, 255);
+	user-select:none;
+}
+.contancts {
+	width: 198px;
+	height: 58px;
+}
+.contancts-conteiner {
+	display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.contancts-tel   {
+	display: flex;
+    align-items: center;
+}
+.whatsapp {
+	margin-top: 8px;
+	margin-right: ;
+	display: flex;
+    align-items: center;
+}
+.whatsapp img{
+	margin-right: 5px;
+}
+.telefon a {
+	color: rgb(255, 255, 255);
+	font-size: 15px;
+	font-family: Montserrat;
+	font-weight: 400;
+	text-decoration: none;
+	user-select:none;
+}
+.contancts img {
+	margin-right: 5px;
+}
+/* Стилизация страницы*/
+
+main {
+	background-color: #16171B;
+	background-image: url(./img/Group\ 48096619\ \(2\)\ \(1\).png);
+	flex-grow: 1;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.main-content {
+	padding: 0 3%;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: flex-start;
+}
+.main-title {
+	width: 100%;
+	height: 70vh;
+}
+.title-block {
+	position: relative;
+	top: 186px;
+	width: 762px;
+	height: 356px;
+
+}
+.title-icon {
+	display: flex;
+		width: 185px;
+		height: 40px;
+		border: 1px solid #5FC9C3;
+		border-radius: 10px;
+		align-items: center;
+		justify-content: center;
+
+}
+.title-pred {
+	color: #ffffff;
+	font-family: Montserrat;
+	text-transform: uppercase;
+	margin-left: 5px;
+	user-select:none;
+}
+.main-push {
+
+}
+.title {
+	color: #ffffff;
+	margin-top: 30px;
+	font-weight: 800;
+	font-family: HeliosExt;
+	font-size: 40px;
+	text-transform: uppercase;
+	user-select:none;
+}
+.title-text {
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(158,240,235,1) 0%, rgba(95,201,195,1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color:transparent;
+	user-select:none;
+}
+
+.pod-title {
+	color: #ffffff;
+	margin-top: 20px;
+	font-weight: 400;
+	font-family: HeliosExt;
+	font-size: 30px;
+	text-transform: uppercase;
+	user-select:none;
+}
+.pod-titleText {
+	font-weight: 800;
+	font-family: HeliosExt;
+	user-select:none;
+}
+#button {
+	display: flex;
+	cursor: pointer;
+	position: relative;
+	top: 80px;
+	background: linear-gradient(181deg, rgba(2, 0, 36, 1) 0%, rgba(158, 240, 235, 1) 0%, rgba(95, 201, 195, 1) 100%);
+	width: 480px;
+	height: 80px;
+	border-radius: 15px;
+	align-items: center;
+	justify-content: flex-end;
+	box-shadow: 0px 4px 0px 0px rgb(47 142 137);
+	animation: all 1s ease-in-out;
+}	
+#button:hover {
+	background: linear-gradient(1deg, rgba(2, 0, 36, 1) 0%, rgba(158, 240, 235, 1) 0%, rgba(95, 201, 195, 1) 100%);
+
+}
+.img-button {
+    position: relative;
+    bottom: 14px;
+}
+.button-text {
+	color: black;
+	font-family: Montserrat;
+	font-weight: 700;
+	font-size: 18px;
+	text-transform: uppercase;
+	user-select:none;
+}
+.button-box {
+    display: flex;
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.button-Podtext {
+	margin-left: 5px;
+	color: black;
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 14px;
+	text-transform: uppercase;
+	user-select:none;
+}
+
+footer {
+	padding-inline: 100px;
+	height: 80px;
+	background-color: #636363;
+}
